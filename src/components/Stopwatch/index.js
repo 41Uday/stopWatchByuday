@@ -34,8 +34,7 @@ class Stopwatch extends Component {
     if (minutes === 60) {
       this.setState({minutes: 0})
     } else if (minutes < 10) {
-      const res = {minutes} - 1
-      return `0${res}`
+      return `0${minutes}`
     }
     return minutes
   }
